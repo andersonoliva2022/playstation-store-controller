@@ -14,13 +14,14 @@
         <div class="navbar">
             <img class="logo" src="./image/logo-playstation-5.png">
             <nav>
-                <ul>
-                    <li><a class="nav-link" href="">Consoles</a></li>
-                    <li><a class="nav-link" href="">Acessórios</a></li>
-                    <li><a class="nav-link" href="">Controles</a></li>
-                    <li><a class="nav-link" href="">outros</a></li>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link" href="">Consoles</a></li>
+                    <li class="nav-li"><a class="nav-link" href="">Acessórios</a></li>
+                    <li class="nav-li"><a class="nav-link" href="">Controles</a></li>
+                    <li class="nav-li"><a class="nav-link" href="">outros</a></li>
                 </ul>
             </nav>
+            <img src="./image/menu.png"  class="menu-icon" alt="botao-menu" onclick="showMenu()">
         </div>
 
         <div class="row">
@@ -47,9 +48,24 @@
             <img src="./image/tw.png"> 
         </div>
 
-
-
     </div>
     
 </body>
+
+<script>
+    const menuList = document.getElementById("menu-list")
+    menuList.style.maxHeight = "0px"  //ligando o javascript ao css
+
+    function showMenu(){
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "120px"
+        }else{
+            menuList.style.maxHeight = "0px"
+        }
+    }
+
+</script>
+
+
+
 </html>
