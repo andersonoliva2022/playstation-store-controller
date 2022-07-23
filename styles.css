@@ -102,6 +102,22 @@ h4{
     border-radius: 6px;
     cursor: pointer;
     background: linear-gradient(63deg, rgba(135, 122, 252, 1) 0%, #9403f4 100%);
+    transition: all 0.5s ease-in-out ;
+}
+/*animação do botão*/
+.buy img{
+    width: 30px;
+    display: none;
+}
+.buy:hover img{
+    display: block;
+}
+.buy:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
 }
 .column-2{
     display: flex;
@@ -165,6 +181,7 @@ h4{
         top: 60px;
         left: 60px;
         overflow: hidden;
+        transition: all 1s 0.1s ease-in-out;/*animação do botão de menu*/
     }
     .menu-icon{
         display: block;
