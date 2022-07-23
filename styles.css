@@ -125,8 +125,18 @@ h4{
     position: relative; /*faz com que o filho color-box obedeça ao limite do pai collun-2 */
 }
 .controller{
-    width: 90%;
+    width: 80%;
     z-index: 2;
+    /*codgo de animação resumido*/
+    animation:moveController 2s infinite alternate ease-in-out;
+    /*
+    animation-name:moveController;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    */
 }
 .color-box{
     position: absolute;
@@ -199,6 +209,22 @@ h4{
     .color-box{
         transform: translateX(70px);
     }
-    
+}
 
+@keyframes moveController{
+
+    from{
+        transform:translate(-5%, -5%) rotate(-5deg);
+    }
+
+
+
+
+
+   /* from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(20px);
+    }*/
 }
