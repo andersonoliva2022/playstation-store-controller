@@ -1,6 +1,6 @@
 # playstation-store-controller
 
-<img src=" " alt="Playstation-Controller">
+<img src="./controle-imagem.img" alt="Playstation-Controller">
 
 > Esse projeto é responsível e possui animação de elemento através do CSS @keyframes.
 
